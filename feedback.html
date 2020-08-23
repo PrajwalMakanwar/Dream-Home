@@ -1,0 +1,63 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="feedback.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="feedback.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function()
+                   {
+                       $(".homefeedback").click(function()
+                       {
+                           window.open("D:/Dream Home/index.html");
+                       });
+                   });     
+           </script>
+           
+    </head>
+        <body>
+            <div class="feedback" align="center" >
+                
+              
+                                    
+      
+      
+                <form action="" method="POST" onsubmit="check()" style="box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);float:center;width:700px;height:480px; margin:75px;">
+                    <title>
+                        Feedback
+                    </title>
+                    <h1 id="h1id">Don't hesitate to contact us!
+          
+                    </h1>
+                    <h4 id="h4id">Our contact details</h4>
+                        Phone: +91 123 456 7890<br>
+                        Email: dreamhome@gmail.com<br><br>
+                    <input type="text" style="height:40px;font-size:20px;border-radius:20px;" pattern="[A-Z a-z]{1,25}" id="cname" class="cname" placeholder="  Name" required>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input style="height: 40px; font-size:20px;border-radius:20px;" type="email" id="email" class="email" placeholder="  Email" required><br><br>
+                    <textarea style="height: 200px; font-size:20px;border-radius:20px;" rows="10" cols="49" id="textarea"  placeholder="  Message" required></textarea><br><br>
+                    <input type="reset" name="reset" value="Cancel" style="background-color: #f44336;height: 40px;color:white;width:120px;border-radius:20px;">&nbsp&nbsp&nbsp&nbsp
+                    <input type="submit" style="background-color:rgb(102, 188, 214);color:white;height: 40px; width: 120px;border-radius:20px;" type="submit" value="submit" id="submit">&nbsp&nbsp&nbsp&nbsp
+                    <button class="homefeedback" style="background-color:rgb(245, 229, 12);color:white;height: 40px; width: 120px;border-radius:20px;">Home</button>
+                </form>              
+        </div>
+         
+        <script type="text/javascript">
+            function check()
+            {
+                var a=document.getElementById('cname').value;
+                console.log(b);
+                var alpha=/^[a-z A-Z]+$/;
+              
+                if(a.match(alpha))
+                {}
+                else
+                {
+                    alert("Enter proper name!");
+                }
+            }   
+        </script>            
+            </body>
+</html>

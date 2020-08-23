@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>SignUp</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript"> 
+            function confrmpwd()
+            {
+                var pwd=document.getElementById("pwd").value;
+                var cpwd=document.getElementById("cpwd").value;
+                if(pwd == cpwd)  
+                    alert("Successful Signup");
+                else
+                    alert("Password and Confirm Password should be same!");    
+
+                  
+            }
+        </script>
+        <script type="text/javascript">
+             $(document).ready(function()
+                {
+                    $(".signup11").click(function()
+                    {
+                        window.open("D:/Dream Home/login.html");
+                    });
+                });     
+        </script>
+    </head>
+    <body>
+    <center>
+        
+        <form name="flogin" onsubmit=" return confrmpwd()"style="margin:140px;color: #7a7a7a;box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);float:center; width:500px;height:380px; margin:150px;">
+            <table>
+                    <h2><b>SignUp</b></h2>
+                    <p><i><b>Please fill the following details to create your account</b></i></p>
+                <!--<lable><b>Email:</b></lable>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                    <input type="email" style="height:40px;border-radius:20px;width:350px;font-size:15px; background-color: rgb(236, 236, 236); " name="email" id="signupemail" placeholder="  Enter Email" required><br><br>
+                <!--<lable><b>Password:</b></lable>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                    <input type="text" pattern=".{0-20}" title="8 characters minimum" maxlength="15" style="height:40px;border-radius:20px;width:350px;font-size:15px; background-color: rgb(236, 236, 236); " id="pwd" placeholder="  Password" required><br><br>        
+                <!--<lable><b>Confirm Password:</b></lable>-->
+                    <input type="text" style="height:40px;width:350px;font-size:15px;border-radius:20px; background-color: rgb(236, 236, 236); " id="cpwd" placeholder="  Confirm Password"required><br><br>
+                    <input type="text" maxlength="10" style="height:40px;width:350px;font-size:15px;border-radius:20px; background-color: rgb(236, 236, 236); " id="cpwd" placeholder="  Contact number" required><br><br>
+                    
+                    
+                    <input type="reset" name="reset" value="Cancel" style="color:white;font-weight:bold; padding: 14px 20px;border-radius:20px;background-color: #f44336;width:100px;border-radius:20px;">&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button type="submit" name="confirmpwd"  style="color:white;width: 100px;padding: 14px 20px;background-color:rgb(102, 188, 214);border-radius:20px;color:white;"><b>SignUp</b></button>&nbsp&nbsp&nbsp&nbsp&nbsp 
+                    <button type="submit" name="confirmpwd" class="signup11" style="color:white;width: 100px;padding: 14px 20px;background-color:rgb(103, 189, 69);border-radius:20px;color:white;"><b>Login</b></button>      
+                   
+
+            
+            </table>
+        </form>
+    </center>
+    </body>
+</html>
+    
+    

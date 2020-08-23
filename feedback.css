@@ -1,0 +1,29 @@
+#cname
+{
+    background-color: rgb(236, 236, 236);   
+}
+#email
+{
+    background-color: rgb(236, 236, 236);   
+}
+#textarea
+{
+    background-color: rgb(236, 236, 236);
+}
+.feedback
+{
+    height: 400px;
+    font-size: 15px;
+    float: center;
+    padding: 0px 50px;
+   
+}
+#h4id
+{
+    font-family: sans-serif;
+    font-style: italic;
+}
+#h1id{
+  font-family: inherit;
+}
+
